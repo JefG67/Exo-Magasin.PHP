@@ -69,9 +69,9 @@ class Magasin {
     public function compterRayons(){
     
         $result = count($this->rayons); 
-        $result .= " rayons : ";
+        $result = $result . " rayons : ";
         foreach($this->rayons as $nom) {
-            $result .= " " . $nom . " ";
+            $result = $result . " " . $nom . " ";
         }
         return $result;
         

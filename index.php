@@ -29,4 +29,3 @@ $magasin3->afficherInfos();
 
 $rayons1->afficherInfo();
 
-$magasin1->compterRayons();
