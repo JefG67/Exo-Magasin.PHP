@@ -32,19 +32,13 @@ public function setNom(string $nom)
     return $this;
 }
 
-/**
- * Get the value of magasin
- */ 
+
 public function getMagasin()
 {
     return $this->magasin;
 }
 
-/**
- * Set the value of magasin
- *
- * @return  self
- */ 
+
 public function setMagasin(Magasin $magasin)
 {
     $this->magasin = $magasin;
