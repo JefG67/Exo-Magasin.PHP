@@ -5,12 +5,14 @@ class Magasin {
 
     private string $nom;
     private GalerieMarchande $galerieMarchande;
+    private array $rayons;
 
 
     public function __construct(string $nom, GalerieMarchande $galerieMarchande){
         $this->nom = $nom;
         $this->galerieMarchande = $galerieMarchande;
-        $this->galerieMarchande ->addMagasin ($this);
+        $this->galerieMarchande->addMagasin($this);
+        $this->rayons = [];
     }
 
 
@@ -42,6 +44,24 @@ class Magasin {
         return $this;
     }
 
+    public function getRayons()
+    {
+        return $this->rayons;
+    }
+
+   
+    public function setRayons($rayons)
+    {
+        $this->rayons = $rayons;
+
+        return $this;
+    }
+
+    
+    public function addRayon(Rayons $rayon){
+        $this->rayons[] = $rayon;
+    }
+
     public function __toString() {
         return $this->nom;
         
@@ -56,6 +76,9 @@ class Magasin {
         . $this->galerieMarchande . "<br>";
     }
 
+
+    
+ 
 }    
 
 
