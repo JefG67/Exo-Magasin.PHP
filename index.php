@@ -15,8 +15,8 @@ $magasin2 = new Magasin("Adidas", $galerieMarchande);
 $magasin3 = new Magasin("Kaporal", $galerieMarchande);
 
 // rayons
-$rayons1 = new Rayons("charcuterie", $magasin1);
-
+$rayons1 = new Rayons("sport", $magasin1);
+$rayons2 = new Rayons("pull", $magasin1);
 // produits
 
 // affichages
@@ -28,3 +28,5 @@ $magasin2->afficherInfos();
 $magasin3->afficherInfos();
 
 $rayons1->afficherInfo();
+
+$magasin1->compterRayons();

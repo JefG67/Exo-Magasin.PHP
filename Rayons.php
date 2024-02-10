@@ -47,8 +47,8 @@ public function setMagasin(Magasin $magasin)
     }
 
     public function afficherInfo(){
-        echo "le magasin « " . $this->magasin . " » posséde un rayon : " . $this->nom;
+        $result = $this->magasin->compterRayons();
+        echo "le magasin « " . $this->magasin . " » posséde ". $result;
     }
-
 
 }
