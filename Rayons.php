@@ -75,7 +75,7 @@ class Rayons
 
     public function afficherInfo()
     {
-        $result = $this->magasin->compterRayons(); //important pour pouvoir renvoyer le resultat de la function compter de la page magasin ( a  faire verifier)
-        echo "le magasin « " . $this->magasin . " » posséde " . $result. "<br>";
+        $result1 = $this->magasin->compterRayons(); //important pour pouvoir renvoyer le resultat de la function compter de la page magasin ( a  faire verifier)
+        echo "le magasin « " . $this->magasin . " » posséde " . $result1. "<br>";
     }
 }
