@@ -18,7 +18,7 @@ $magasin3 = new Magasin("Kaporal", $galerieMarchande);
 $rayons1 = new Rayons("sport", $magasin1);
 $rayons2 = new Rayons("pull", $magasin1);
 // produits
-
+$produit1 = new Produits("short",$rayons1);
 // affichages
 $galerieMarchande->afficherInfos();
 $galerieMarchande2->afficherInfos();
@@ -29,3 +29,4 @@ $magasin3->afficherInfos();
 
 $rayons1->afficherInfo();
 
+$produit1->afficherInfo();
